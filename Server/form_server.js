@@ -1,7 +1,3 @@
-  Meteor.publish("Forms", function(){
-    return Forms.find();
-  });
-
 //Methods relating to manipulation of Form Objects
 Meteor.methods({
   //Create new form. Simple method, just pass in the form object. 
