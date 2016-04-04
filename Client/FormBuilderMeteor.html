@@ -6,9 +6,28 @@
   <h1>Welcome to Meteor!</h1>
 
   {{> hello}}
+  {{> hello2}}
+
+  <ul>
+	{{#each Forms}}
+		{{> formm}} 
+	{{/each}}
+  </ul>
 </body>
 
 <template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+  <button>Click Me 1</button>
+</template>
+
+<template name="hello2">
+  <button>Click Me 2</button>
+</template>
+
+<template name="formm">
+		<li>
+			<div>{{title}}</div>
+			<div>{{subtitle}}</div>
+			<div>{{_id}}</div>
+			<div>{{insertionDate}}</div>
+		</li>
 </template>
